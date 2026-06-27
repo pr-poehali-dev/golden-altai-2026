@@ -96,6 +96,41 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(100deg, #ff6b35, #ffb627, #2ec4b6);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-altai {
+    background: linear-gradient(
+      135deg,
+      #ff6b35 0%,
+      #ff9e40 40%,
+      #ffb627 70%,
+      #2ec4b6 100%
+    );
+  }
+  .card-hover {
+    transition:
+      transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.45s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-8px) scale(1.015);
+    box-shadow: 0 28px 60px -22px rgba(255, 107, 53, 0.55);
+  }
+  .grain {
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    );
+    background-size: 4px 4px;
   }
 }
