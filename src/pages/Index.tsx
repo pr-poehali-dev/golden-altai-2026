@@ -73,7 +73,7 @@ const Index = () => {
 
         <div className="relative z-10 animate-fade-up">
           <span className="inline-block mb-6 px-5 py-2 rounded-full border border-[#FFB627]/50 bg-white/5 backdrop-blur-sm font-display tracking-[0.35em] text-xs text-[#FFB627] uppercase">
-            Авторский тур · Место тур
+            Авторский тур · Мечта тур
           </span>
           <h1 className="font-display font-bold uppercase leading-[0.92] text-6xl sm:text-8xl md:text-9xl tracking-tight">
             <span className="block text-gradient animate-gradient-pan">Золотой</span>
@@ -170,7 +170,7 @@ const Index = () => {
         <div className="relative container max-w-5xl text-center">
           <span className="font-hand text-3xl text-white/90">почему именно мы</span>
           <h2 className="font-display font-bold uppercase text-4xl md:text-6xl text-white mt-2 leading-tight">
-            Путешествия с «Место тур» — <br className="hidden md:block" />это всегда правильный выбор
+            Путешествия с «Мечта тур» — <br className="hidden md:block" />это всегда правильный выбор
           </h2>
           <p className="mt-6 max-w-2xl mx-auto text-white/90 text-lg">
             Потому что в наших турах по-настоящему <b>комфортно</b>. Здесь всегда <b>вкусно</b>,
@@ -195,7 +195,7 @@ const Index = () => {
             <p className="text-lg md:text-xl text-white/90 italic leading-relaxed">
               «Это был лучший отпуск в моей жизни. Всё продумано до мелочей: вкусные обеды,
               удобный транспорт, заботливый гид. Уезжали уставшие, но абсолютно счастливые
-              и с новыми друзьями. Спасибо, „Место тур“!»
+              и с новыми друзьями. Спасибо, „Мечта тур“!»
             </p>
             <footer className="mt-5 flex items-center gap-3">
               <div className="w-11 h-11 rounded-full bg-altai flex items-center justify-center font-display text-lg">А</div>
@@ -289,7 +289,7 @@ const Index = () => {
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 py-10 px-5 text-center">
-        <div className="font-display uppercase text-2xl tracking-wider text-gradient">Место тур</div>
+        <div className="font-display uppercase text-2xl tracking-wider text-gradient">Мечта тур</div>
         <p className="mt-2 text-white/50 text-sm">Золотой Алтай 2026 · Путешествия, в которые влюбляешься</p>
         <div className="mt-5 flex justify-center gap-4 text-white/50">
           <Icon name="Instagram" size={22} className="hover:text-[#FFB627] transition-colors cursor-pointer" />
