@@ -51,7 +51,7 @@ const days = [
     n: 6,
     title: 'Прощаемся с Алтаем. Трансфер в аэропорт',
     img: 'https://cdn.poehali.dev/projects/24fad796-5cdc-4637-8c70-7ce155449543/bucket/c1a3fc4f-8e45-4b6a-94b6-6c59c01613bb.jpeg',
-    mood: 'Тепло, обнимашки и «до новых встреч»',
+    mood: 'Тепло, обнимашки и до новых встреч',
     spots: ['Сытный завтрак', 'Индивидуальный трансфер', 'Аэропорт Горно-Алтайск'],
     desc: 'После сытного завтрака — индивидуальный трансфер в аэропорт по времени вашего вылета. Но мы не прощаемся! После такого путешествия каждый становится другу больше, чем просто попутчик. Впереди много обнимашек и тёплых слов благодарности. До новых встреч!',
     activity: 'Поездка с нами — это заряд классных эмоций, любви и заботы!',
@@ -115,7 +115,7 @@ const Index = () => {
             { v: '6', l: 'дней приключений' },
             { v: '20+', l: 'локаций' },
             { v: '1000+', l: 'км дороги' },
-            { v: '∞', l: 'эмоций' },
+            { v: '\u221e', l: 'эмоций' },
           ].map((s) => (
             <div key={s.l}>
               <div className="font-display text-5xl md:text-6xl text-gradient">{s.v}</div>
@@ -199,23 +199,24 @@ const Index = () => {
             ))}
           </div>
 
-          <blockquote className="mt-14 max-w-3xl mx-auto bg-[#0E1116]/85 backdrop-blur-sm rounded-3xl p-8 md:p-10 border border-white/10 text-left">
-            <Icon name="Quote" size={36} className="text-[#FFB627] mb-3" />
-            <p className="text-lg md:text-xl text-white/90 italic leading-relaxed">
-              «Это был лучший отпуск в моей жизни. Всё продумано до мелочей: вкусные обеды,
-              удобный транспорт, заботливый гид. Уезжали уставшие, но абсолютно счастливые
-              и с новыми друзьями. Спасибо, „Мечта тур“!»
-            </p>
-            <footer className="mt-5 flex items-center gap-3">
-              <div className="w-11 h-11 rounded-full bg-altai flex items-center justify-center font-display text-lg">А</div>
-              <div>
-                <div className="font-semibold">Анна, Москва</div>
-                <div className="text-sm text-white/55 flex gap-0.5">
-                  {[...Array(5)].map((_, i) => <Icon key={i} name="Star" size={14} className="text-[#FFB627] fill-[#FFB627]" />)}
-                </div>
+          {/* Veronika card */}
+          <div className="mt-14 max-w-3xl mx-auto bg-[#0E1116]/85 backdrop-blur-sm rounded-3xl p-8 md:p-10 border border-white/10 flex flex-col sm:flex-row items-center gap-7 text-left">
+            <div className="shrink-0 flex flex-col items-center gap-3">
+              <div className="w-24 h-24 rounded-full bg-altai flex items-center justify-center font-display text-4xl font-bold shadow-lg shadow-[#FF6B35]/30">В</div>
+              <div className="text-center">
+                <div className="font-display uppercase text-lg tracking-wide">Вероника</div>
+                <div className="text-sm text-[#FFB627]">Автор и гид тура</div>
               </div>
-            </footer>
-          </blockquote>
+            </div>
+            <div>
+              <Icon name="Quote" size={30} className="text-[#FFB627] mb-3" />
+              <p className="text-base md:text-lg text-white/90 italic leading-relaxed">
+                Я создала «Мечта тур», потому что верю: путешествие должно быть не только красивым,
+                но и по-настоящему заботливым. Каждый маршрут я продумываю так, чтобы вы чувствовали
+                себя комфортно, были сыты, влюблены в Алтай и возвращались домой с новыми друзьями.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -242,7 +243,9 @@ const Index = () => {
               </ul>
               <div className="mt-8 flex items-center gap-3 text-white/70">
                 <Icon name="Phone" size={20} className="text-[#FFB627]" />
-                <span className="font-display text-xl tracking-wide">+7 (923) 298-18-88</span>
+                <a href="tel:+79232981888" className="font-display text-xl tracking-wide hover:text-[#FFB627] transition-colors">
+                  +7 (923) 298-18-88
+                </a>
               </div>
             </div>
 
