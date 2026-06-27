@@ -100,6 +100,10 @@ const Index = () => {
             <a href="#days" className="px-9 py-4 rounded-full font-display uppercase tracking-wider text-base font-semibold border border-white/25 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors">
               Программа по дням
             </a>
+            <a href="/program" target="_blank" className="px-9 py-4 rounded-full font-display uppercase tracking-wider text-base font-semibold border border-[#FFB627]/40 bg-[#FFB627]/10 text-[#FFB627] hover:bg-[#FFB627]/20 transition-colors flex items-center justify-center gap-2">
+              <Icon name="FileText" size={18} />
+              Скачать PDF
+            </a>
           </div>
         </div>
 
