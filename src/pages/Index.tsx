@@ -104,6 +104,10 @@ const Index = () => {
               <Icon name="FileText" size={18} />
               Скачать PDF
             </a>
+            <a href="/presentation" target="_blank" className="px-9 py-4 rounded-full font-display uppercase tracking-wider text-base font-semibold border border-[#2EC4B6]/40 bg-[#2EC4B6]/10 text-[#2EC4B6] hover:bg-[#2EC4B6]/20 transition-colors flex items-center justify-center gap-2">
+              <Icon name="Presentation" size={18} />
+              Презентация
+            </a>
           </div>
         </div>
 
